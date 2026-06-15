@@ -1,6 +1,6 @@
 name: cicd pipeline
 on: 
-  branches: [main]
+  branches: [main] 
     
 jobs:
   using_reusable_workflow:
