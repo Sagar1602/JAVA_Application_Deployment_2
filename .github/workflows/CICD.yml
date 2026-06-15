@@ -1,6 +1,7 @@
 name: cicd pipeline
 on: 
-  - push
+  branches: [main]
+    
 jobs:
   using_reusable_workflow:
     uses: sagar1602/JAVA_Application_Deployment/.github/workflows/Reusable_workflow.yml@main
