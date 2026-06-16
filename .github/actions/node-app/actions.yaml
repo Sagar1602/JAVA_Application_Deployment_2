@@ -12,9 +12,15 @@ runs:
       run: npm ci 
       shell: bash
 
+    - name: execute the lint
+      run: npm run lint
+      shell: bash  
+
     - name: test the Dependencies
-      run: npm test
-      shell: bash     
+      run: npm run test
+      shell: bash  
+
+          
 
 
 
