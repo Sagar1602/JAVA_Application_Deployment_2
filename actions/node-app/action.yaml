@@ -1,0 +1,21 @@
+name: "Node.js Install and Setup"
+description: "this actions can be used to install the Nodejs and its Dependencies"
+runs:
+  using: 'composite'
+  steps:
+    - name: install NodeJS
+      uses: actions/setup-node@v5
+      with:
+        node-version: '24'
+
+    - name: execute the Clean Install
+      run: npm ci 
+      shell: bash
+
+    - name: execute the lint
+      run: npm run lint
+      shell: bash  
+
+    - name: test the Dependencies
+      run: npm run test
+      shell: bash 
