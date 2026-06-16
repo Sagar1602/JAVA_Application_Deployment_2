@@ -1,0 +1,9 @@
+name: "Node.js Install and Setup"
+description: "this actions can be used to install the Nodejs and its Dependencies"
+inputs:
+  node-version:
+    description: "Node.js version"
+    required: true
+    default: "20"
+
+    
